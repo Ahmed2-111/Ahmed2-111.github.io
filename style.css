@@ -5,41 +5,40 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   background: #0f172a;
-  color: #f8fafc;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
 a {
-  color: #38bdf8;
   text-decoration: none;
 }
 
-.page {
-  max-width: 1200px;
+.container {
+  display: flex;
+  max-width: 1400px;
   margin: 30px auto;
-  display: grid;
-  grid-template-columns: 300px 1fr;
   gap: 30px;
   padding: 20px;
 }
 
-/* LEFT CARD */
+/* SIDEBAR */
 
 .sidebar {
+  width: 320px;
   background: #111827;
   border: 1px solid #334155;
   border-radius: 24px;
   padding: 30px;
   height: fit-content;
   position: sticky;
-  top: 30px;
+  top: 20px;
 }
 
 .profile-img {
-  width: 160px;
-  height: 160px;
-  border-radius: 24px;
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
   object-fit: cover;
   display: block;
   margin: 0 auto 25px;
@@ -48,78 +47,77 @@ a {
 
 .sidebar h1 {
   text-align: center;
-  font-size: 26px;
   margin-bottom: 10px;
 }
 
 .role {
   text-align: center;
   background: #1e293b;
-  padding: 8px 12px;
-  border-radius: 10px;
-  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 10px;
 }
 
 .subtitle {
   text-align: center;
   color: #94a3b8;
-  font-size: 14px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
-.info {
+.info-box {
   border-top: 1px solid #334155;
   border-bottom: 1px solid #334155;
   padding: 20px 0;
+}
+
+.info-item {
   margin-bottom: 20px;
 }
 
-.info p {
-  margin-bottom: 16px;
-  color: #cbd5e1;
+.info-item h3 {
+  color: #38bdf8;
+  margin-bottom: 6px;
 }
 
-.info strong {
-  color: #f8fafc;
-}
-
-.links {
+.social-links {
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.links a {
+.social-links a {
   background: #1e293b;
+  color: white;
   padding: 12px;
   border-radius: 10px;
   text-align: center;
-  font-weight: bold;
 }
 
-/* RIGHT CONTENT */
+/* MAIN */
 
-.content {
+.main-content {
+  flex: 1;
   background: #111827;
   border: 1px solid #334155;
   border-radius: 24px;
-  padding: 35px;
+  padding: 40px;
 }
 
-.topnav {
+.navbar {
   display: flex;
   justify-content: flex-end;
-  gap: 28px;
-  margin-bottom: 45px;
+  gap: 30px;
+  margin-bottom: 60px;
 }
 
-.topnav a {
-  color: #e5e7eb;
+.navbar a {
+  color: white;
   font-weight: bold;
 }
 
 .section {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .section h2 {
@@ -130,16 +128,16 @@ a {
 .section h2::after {
   content: "";
   display: block;
-  width: 55px;
+  width: 60px;
   height: 4px;
   background: #38bdf8;
   margin-top: 10px;
-  border-radius: 10px;
+  border-radius: 999px;
 }
 
 .section p {
   color: #cbd5e1;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 /* SKILLS */
@@ -153,81 +151,84 @@ a {
 .skills span {
   background: #1e293b;
   border: 1px solid #475569;
-  padding: 10px 14px;
+  padding: 10px 16px;
   border-radius: 999px;
 }
 
 /* PROJECTS */
 
-.project-grid {
+.projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 25px;
 }
 
 .project-card {
   background: #0f172a;
   border: 1px solid #334155;
-  border-radius: 18px;
+  border-radius: 20px;
   overflow: hidden;
 }
 
-.project-image {
-  height: 140px;
+.project-banner {
+  height: 150px;
   background: linear-gradient(135deg, #1e293b, #020617);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: #38bdf8;
-  font-size: 38px;
+  font-size: 42px;
   font-weight: bold;
 }
 
-.project-card h3 {
-  padding: 18px 18px 8px;
-  font-size: 22px;
+.project-content {
+  padding: 20px;
 }
 
-.project-card p {
-  padding: 0 18px 16px;
-  font-size: 15px;
+.project-content h3 {
+  margin-bottom: 12px;
+  font-size: 24px;
 }
 
 .tech {
-  color: #93c5fd !important;
+  margin-top: 18px;
+  color: #38bdf8;
   font-weight: bold;
 }
 
 /* EDUCATION */
 
-.timeline-card {
+.education-card {
   background: #0f172a;
   border: 1px solid #334155;
-  border-radius: 18px;
-  padding: 22px;
+  border-radius: 20px;
+  padding: 25px;
 }
 
-.timeline-card h3 {
+.education-card h3 {
   margin-bottom: 10px;
 }
 
 /* MOBILE */
 
-@media (max-width: 900px) {
-  .page {
-    grid-template-columns: 1fr;
+@media (max-width: 1000px) {
+
+  .container {
+    flex-direction: column;
   }
 
   .sidebar {
-    position: static;
+    width: 100%;
+    position: relative;
   }
 
-  .project-grid {
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 
-  .topnav {
+  .navbar {
     justify-content: center;
     flex-wrap: wrap;
   }
+
 }
