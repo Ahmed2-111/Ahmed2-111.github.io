@@ -230,5 +230,26 @@ a {
     justify-content: center;
     flex-wrap: wrap;
   }
+.languages-box {
+  margin-top: 25px;
+}
 
+.languages-box h3 {
+  color: #38bdf8;
+  margin-bottom: 12px;
+}
+
+.language-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.language-list span {
+  background: #1e293b;
+  border: 1px solid #334155;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
 }
