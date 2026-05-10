@@ -1,142 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ahmed Al-Swaidi | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="page">
+
+  <div class="container">
+
+    <!-- LEFT SIDEBAR -->
 
     <aside class="sidebar">
-      <img class="profile-img" src="profile.jpg" alt="Ahmed Al-Swaidi">
+
+      <img src="profile.jpg" alt="Ahmed Al-Swaidi" class="profile-img">
 
       <h1>Ahmed Al-Swaidi</h1>
-      <p class="role">Ingenieurinformatik Student</p>
-      <p class="subtitle">Software Development · Technical IT</p>
 
-      <div class="info">
-        <p><strong>Email</strong><br><a href="mailto:alswaidiahmed9@gmail.com">alswaidiahmed9@gmail.com</a></p>
-        <p><strong>Location</strong><br>Berlin, Germany</p>
-        <p><strong>Study</strong><br>HTW Berlin · 4th Semester</p>
+      <p class="role">
+        Ingenieurinformatik Student
+      </p>
+
+      <p class="subtitle">
+        Software Development · Technical IT
+      </p>
+
+      <div class="info-box">
+
+        <div class="info-item">
+          <h3>Email</h3>
+          <p>alswaidiahmed9@gmail.com</p>
+        </div>
+
+        <div class="info-item">
+          <h3>Location</h3>
+          <p>Berlin, Germany</p>
+        </div>
+
+        <div class="info-item">
+          <h3>Study</h3>
+          <p>HTW Berlin · 4th Semester</p>
+        </div>
+
       </div>
 
-      <div class="links">
+      <div class="social-links">
         <a href="https://github.com/Ahmed2-111" target="_blank">GitHub</a>
         <a href="https://gitlab.rz.htw-berlin.de/ahmed-al-swaidi" target="_blank">GitLab</a>
-        <a href="#" target="_blank">LinkedIn</a>
+        <a href="#">LinkedIn</a>
       </div>
+
     </aside>
 
-    <main class="content">
+    <!-- RIGHT CONTENT -->
 
-      <nav class="topnav">
+    <main class="main-content">
+
+      <nav class="navbar">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Portfolio</a>
         <a href="#contact">Contact</a>
       </nav>
 
+      <!-- ABOUT -->
+
       <section id="about" class="section">
+
         <h2>About Me</h2>
+
         <p>
           I am a motivated Ingenieurinformatik student at HTW Berlin with a strong
-          interest in software development, technical IT, and practical engineering projects.
-          I have experience with object-oriented programming, Git/GitLab, CMake, and
-          academic software projects using Python and C#.
+          interest in software development, embedded systems, technical IT,
+          and engineering projects.
+
+          I have experience with object-oriented programming, Git/GitLab,
+          CMake, Python, and C# through academic and private projects.
         </p>
+
       </section>
 
+      <!-- SKILLS -->
+
       <section id="skills" class="section">
+
         <h2>Technical Skills</h2>
+
         <div class="skills">
+
           <span>Python</span>
           <span>C#</span>
           <span>C++</span>
           <span>Git</span>
-          <span>GitLab</span>
           <span>GitHub</span>
+          <span>GitLab</span>
           <span>CMake</span>
           <span>SQL</span>
+          <span>Arduino</span>
+          <span>ESP32</span>
           <span>HTML</span>
           <span>CSS</span>
           <span>JavaScript</span>
-          <span>Arduino</span>
-          <span>ESP32</span>
+
         </div>
+
       </section>
+
+      <!-- PROJECTS -->
 
       <section id="projects" class="section">
+
         <h2>Portfolio</h2>
 
-        <div class="project-grid">
+        <div class="projects-grid">
 
-          <article class="project-card">
-            <div class="project-image">OSS</div>
-            <h3>OSS Check mit CMake</h3>
-            <p>
-              Python-based desktop tool for analyzing CMake projects, detecting
-              used libraries, and displaying version and license information.
-            </p>
-            <p class="tech">Python · Tkinter · CMake · GitLab</p>
-          </article>
+          <div class="project-card">
 
-          <article class="project-card">
-            <div class="project-image">MEM</div>
-            <h3>Memory Game</h3>
-            <p>
-              Study project focused on object-oriented programming, structured
-              code organization, error analysis, and database setup.
-            </p>
-            <p class="tech">C# · Visual Studio · SQL</p>
-          </article>
+            <div class="project-banner">
+              OSS
+            </div>
 
-          <article class="project-card">
-            <div class="project-image">SHOP</div>
-            <h3>Naasoug Online-Shop</h3>
-            <p>
-              Private software project for planning and implementing the basic
-              structure and application logic of an online shop.
-            </p>
-            <p class="tech">Web Development · Project Planning</p>
-          </article>
+            <div class="project-content">
 
-          <article class="project-card">
-            <div class="project-image">ESP</div>
-            <h3>Badminton Serving Machine</h3>
-            <p>
-              University engineering project combining software, electronics,
-              motors, ESP32 control, and a web-based user interface.
-            </p>
-            <p class="tech">ESP32 · Arduino · Web UI · Motor Control</p>
-          </article>
+              <h3>OSS Check mit CMake</h3>
+
+              <p>
+                Python-based desktop tool for analyzing CMake projects,
+                detecting libraries, and displaying license information.
+              </p>
+
+              <div class="tech">
+                Python · Tkinter · CMake · GitLab
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="project-card">
+
+            <div class="project-banner">
+              MEM
+            </div>
+
+            <div class="project-content">
+
+              <h3>Memory Game</h3>
+
+              <p>
+                Study project focused on object-oriented programming,
+                structured code organization, and SQL database integration.
+              </p>
+
+              <div class="tech">
+                C# · SQL · Visual Studio
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="project-card">
+
+            <div class="project-banner">
+              SHOP
+            </div>
+
+            <div class="project-content">
+
+              <h3>Naasoug Online-Shop</h3>
+
+              <p>
+                Personal software project for planning and building
+                the structure and application logic of an online shop.
+              </p>
+
+              <div class="tech">
+                Web Development · Project Planning
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="project-card">
+
+            <div class="project-banner">
+              ESP
+            </div>
+
+            <div class="project-content">
+
+              <h3>Badminton Serving Machine</h3>
+
+              <p>
+                Engineering project combining ESP32 control,
+                motors, electronics, and a web interface.
+              </p>
+
+              <div class="tech">
+                ESP32 · Arduino · Web UI
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
+
       </section>
+
+      <!-- EDUCATION -->
 
       <section class="section">
+
         <h2>Education</h2>
-        <div class="timeline-card">
+
+        <div class="education-card">
+
           <h3>Bachelor Ingenieurinformatik</h3>
-          <p>HTW Berlin · since 2023 · 4th Semester</p>
+
           <p>
-            Relevant modules: Programming 1 & 2, Software Engineering Project,
-            Programming Project, Modeling in Computer Science, Mechatronics,
-            Technical Mechanics, Mathematics.
+            HTW Berlin · since 2023 · 4th Semester
           </p>
+
+          <p>
+            Programming · Software Engineering · Mechatronics ·
+            Technical Mechanics · Mathematics
+          </p>
+
         </div>
+
       </section>
 
+      <!-- CONTACT -->
+
       <section id="contact" class="section">
+
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:alswaidiahmed9@gmail.com">alswaidiahmed9@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/Ahmed2-111" target="_blank">github.com/Ahmed2-111</a></p>
-        <p>GitLab: <a href="https://gitlab.rz.htw-berlin.de/ahmed-al-swaidi" target="_blank">gitlab.rz.htw-berlin.de/ahmed-al-swaidi</a></p>
+
+        <p>Email: alswaidiahmed9@gmail.com</p>
+
+        <p>
+          GitHub:
+          github.com/Ahmed2-111
+        </p>
+
+        <p>
+          GitLab:
+          gitlab.rz.htw-berlin.de/ahmed-al-swaidi
+        </p>
+
       </section>
 
     </main>
+
   </div>
+
 </body>
+
 </html>
